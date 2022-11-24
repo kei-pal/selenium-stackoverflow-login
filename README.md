@@ -10,15 +10,18 @@ Now logging on every day is a problem, but if there's anything I love more than 
 
 1. Create a premium pythonanywhere account (needed to run Selenium)
 2. Create a file called 'so-login.py' in your user folder (home/yourusername/so-login.py)
+3. Copy the contents of [so-login.py](https://github.com/keipala/selenium-stackoverflow-login/blob/main/so-login.py) in this repo, making sure to include your username and password and profile page.
 3. Click 'Tasks' on the top right, and add a daily task to run the above file
 
 ## How to check that it's working?
-1. Stackover counts days as UTC, so run your script soon after then (It is not recommended to run on the hour, as most people set this time and therefore it can be delayed. Rather test fate and go at 13 minutes passed.)
+1. Stackover counts days in UTC, so run your script soon after midnight in UTC (It is not recommended to run on the hour, as most people set this time and therefore it can be delayed. Rather test fate and run it at 13 minutes passed.)
 2. Go to your profile and pin the Fanatic badge progress to it.
 3. The next day, on a browser that is not logged in to Stackoverflow, go to your profile and the consequtive days should be increased by one.
 
 ## What to do if it's not working?
-1. Go to the tasks page on Pythonanywhere and check the task log after it has run one. A successful output will look like below:
+1. Go to the tasks page on Pythonanywhere and check the task log after it has run one.
+2. Compare the output to a successful output below.
+3. Big brain time.
 
 ```
 Got Stackoverflow homepage
